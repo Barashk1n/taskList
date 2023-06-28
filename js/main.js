@@ -12,9 +12,7 @@ if (localStorage.getItem("tasks")) {
 tasks.forEach(function (task) {
   renderTask(task);
 });
-
 checkEmptyLiist();
-
 form.addEventListener("submit", addTask);
 tasksList.addEventListener("click", deleteTask);
 tasksList.addEventListener("click", doneTask);
